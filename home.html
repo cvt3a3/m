@@ -63,5 +63,38 @@
 	<P>Designed By:CVT</P>
 	<p>contact us:cvt3a3@gmail.com</p>
 </div>
+	<script type="text/javascript">
+	var images=new Array();
+	images[0]='https://cometdelivery.com/blog/What-is-LTL-Freight.jpg';
+	images[1]='https://cerasis.com/wp-content/uploads/2013/11/ltl-shipping.jpg';
+	images[2]='https://www.joc.com/sites/default/files/field_feature_image/Truck%20delivery%20private%20US.jpg%202.jpg';
+	images[3]='https://s3-eu-central-1.amazonaws.com/eurosender-blog/wp-content/uploads/2017/07/26140159/freight.png';
+	images[4]='https://www.echo.com/sites/default/files/styles/letterbox_750x265/public/Trucks%20on%20the%20Road.jpg?itok=xcBn0rRx';
+	function switcher(i){
+		document.getElementById('header').style.backgroundImage='url("'+images[i]+'")';
+		document.getElementById('header').style.transition = "all 2s";
+		i++;
+		if( i > (images.length - 1) ){
+
+		i = 0; 
+
+		}
+		
+setTimeout('switcher('+i+')',2000);
+
+
+
+
+	}
+	switcher(0);
+
+
+	function appear() {
+		document.getElementById("navb").style.width = "50%";
+	}
+	function disappear() {
+		document.getElementById("navb").style.width = "0px";
+	}
+</script>
 </body>
 </html>
