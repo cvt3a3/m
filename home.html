@@ -2,7 +2,29 @@
 <html>
 <head>
 	<title>home</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">@media screen and (min-device-width: 560px){
+		#Name{
+			float: right;
+			 margin-top: 2%;
+			  margin-right:6%;
+		}
+		#media{
+			margin-left: 2%;
+		}
+		.fa {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  margin-left:3%;
+  margin-top: 2%; 
+  margin-bottom: 2%; 
+  
+  
+}
+#first{
+	margin-left: 0;
+}
 html,head, body
 {
     margin: 0;
@@ -11,9 +33,28 @@ html,head, body
  min-height:100%; 
  
 }
+
 body{
 	
 	
+}
+#topper{
+	text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 2%;
+    overflow: hidden;
+    
+    
+    border: none;
+    
+}
+#topping{
+	border: 2px white solid;
+	font-size: 30px;
+	border-radius: 50%;
+	color: white;
+	background-color: #45c2fb;
 }
 #logop, #menu{
 	display: none;
@@ -28,7 +69,7 @@ body{
 background-attachment: scroll;
   transition: background-image 2s;
   background-repeat: no-repeat;
-	padding-left: 5%;
+	padding-left: 0%;
 	padding-right: 5%;
 	padding-top: 1%;
 
@@ -44,15 +85,21 @@ background-attachment: scroll;
 	padding: 5px;
 	padding-top: 100%;
 	font-size: x-large;
+	color: #df413d;
 }
+
 .links:hover{
-	border: 1px solid black;
+	border: 3px solid #3d74c0;
+    /* background-color: #de6c3e; */
+    border-radius: 20px;
 	transition: border 1s;
 	border-top:0;
 
 }
 #active{
-	border: 1px solid black;
+	border: 3px solid #3d74c0;
+    /* background-color: #de6c3e; */
+    border-radius: 20px;
 
 }
 #nav{
@@ -64,8 +111,8 @@ background-attachment: scroll;
 	height:50%;
 }
 .paragraph{
-	padding-left: 2%;
-	width:65%;
+	padding-left: 3%;
+	width:55%;
 	overflow-wrap: break-word;
 	float: left;
 
@@ -76,25 +123,52 @@ background-attachment: scroll;
 p{
 	font-size: 150%
 }
+.footing{
+	font-size: 100%;
+	margin-left:2% 
+}
 .pictures{
 	padding-top: 2%;
+	padding-left: 3%;
+	padding-right: 2%;
 	float: right;
-	width:30%;
+	width:35%;
 }
 .pics{
 	width: 100%
 }
 #footer{
+	
 	padding:1%;
 	padding-top:0;
 background-color: black;
 color:white;
-text-align: center;
+
 	clear: both;
 }
+
+
 }</style>
 	<style type="text/css">
 		@media screen and (max-device-width: 560px){
+			#topper{
+	text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 2%;
+    overflow: hidden;
+    
+    
+    border: none;
+    
+}
+#topping{
+	border: 3px white solid;
+	font-size: 100px;
+	border-radius: 50%;
+	color: white;
+	background-color: #45c2fb;
+}
 html,head, body
 {
     margin: 0;
@@ -156,13 +230,14 @@ color: white;
  background-size:100% 100%;
  background-clip: padding-box;
 background-attachment: scroll;
-  width: 100%;
+  width: 105%;
   background-repeat: no-repeat;
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-top: 1%;
 	margin-bottom: 3%;
 	transition: background-image 2s;
+	margin-right: 0;
 
 	/*position: fixed;*/
 }
@@ -174,7 +249,7 @@ background-attachment: scroll;
 	display: none;
 }
 .paragraph{
-	padding-left: 2%;
+	padding: 5%;
 	width:105%;
 	overflow-wrap: break-word;
 	float: left;
@@ -183,54 +258,83 @@ background-attachment: scroll;
 p{
 	font-size: 150%
 }
+.footing{
+	font-size: 100%;
+}
 .pictures{
-	padding: 0;
+	padding-left: 2%;
+	padding-bottom: 3%;
 	
-	width:105%;
+	width:100%;
 }
 .pics{
 	width: 105%;
 }
 #footer{
-	width:108%;
+	width:113%;
 	margin: 0;
-	padding:1%;
+	
+	padding: 1%;
 	padding-top:0;
 background-color: black;
 color:white;
 text-align: center;
 	clear: both;
+font-size:200%;
 }
 
+		#media{
+			
+			text-align: center;
+		}
+		.fa {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  margin-left:3%;
+  margin-top: 2%; 
+  margin-bottom: 2%; 
+  
+  
 }
+#first{
+	margin-left: 0;
+}
+#boom{
+	text-align: center;
+}
+}
+
 	</style>
+<a name="top"></a>
+
 	<div id="header">
-	<span id="menu" onclick="appear();">&#9776; Menu</span>
+	<span id="menu" onclick="appear();" style="color: #3d74c0;">&#9776; <span style="color: #df413d;">Menu</span></span>
 	<div id="nav">
 		
 	<a href="home.html" class="links" id="active">HOME</a>
-	<a href="home.html" class="links">About</a>
-	<a href="home.html" class="links">Services</a>
+	<a href="about us.html" class="links">About</a>
+	<a href="services.html" class="links">Services</a>
 	<a href="gallery.html" class="links">Gallery</a>
-	<a href="home.html" class="links">Contact</a>
+	<a href="contact.html" class="links">Contact</a>
 	
 	</div>
 	<div id="navb">
 		<a id="exit" onclick="disappear()">&times;</a><br><BR><BR><BR>
 	<a href="home.html" class="links" id="active">HOME</a><br><BR><BR><BR>
-	<a href="home.html" class="links">About</a><br><BR><BR><BR>
-	<a href="home.html" class="links">Services</a><br><BR><BR><BR>
+	<a href="about us.html" class="links">About</a><br><BR><BR><BR>
+	<a href="services.htmll" class="links">Services</a><br><BR><BR><BR>
 	<a href="gallery.html" class="links">Gallery</a><br><BR><BR><BR>
-	<a href="home.html" class="links">Contact</a><br><BR><BR><BR>
+	<a href="contact.html" class="links">Contact</a><br><BR><BR><BR>
 	
 	</div>
 	
 
 	<div id="logo">
-		<a href="home.html" id="pic"><img src="logo.pnghttps://i.ibb.co/njFqn7F/logo.png" width="40%" height="60%"></a>
+		<a href="home.html" id="pic"><img src="https://i.ibb.co/2qWJPwY/logo1.png" width="80%" height="90%"></a>
 	</div>
 	<div id="logop" style="margin-right: 10%; margin-top: -10%">
-		<a href="home.html" id="pic"><img src="logo.png" width="20%" height="40%" style="float: right;"></a>
+		<a href="home.html" id="pic"><img src="https://i.ibb.co/87c7SDg/logo3.png" width="40%" height="80%" style="float: right;"></a>
 	</div>
 
 </div>
@@ -272,20 +376,43 @@ text-align: center;
 </div>
 
 <div id="footer"><br>
-	<p>copyright &copy; 2018 all rights reserved</p>
-	<P>Designed By:CVT</P>
-	<p>contact us:cvt3a3@gmail.com</p>
+	<div id="media">
+		<a href="https://www.facebook.com/Beta3Sha7n" id="first" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-google"></a>
+		<a href="#" class="fa fa-yahoo"></a>
+		<a href="home.html" id="boom" style="color: white;text-decoration: none; font-size: 100%"><h1 id="Name">Beta3 Sha7n</h1></a>
+	</div>
+	
+	<h2 class="footing">&copy; 2020 Beta3 Sha7n. All Rights Reserved | Design by <br>CVT</h2>
+	
+	<h3 class="footing">contact us:cvt3a3@gmail.com</h3>
+	
 </div>
+<a href="#top" id="topper"><button id="topping" style="text-align:center; padding-bottom:20px;"><span>&#9650;</span></button></a>
 <script type="text/javascript">
+	document.getElementById("topper").style.display="none";
+	window.onscroll = function() {boop()};
+function boop(){
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("topper").style.display = "block";
+  } else {
+    document.getElementById("topper").style.display = "none";
+  }
+}
+
+	
+	
 	var images=new Array();
-	images[0]='https://cometdelivery.com/blog/What-is-LTL-Freight.jpg';
-	images[1]='https://cerasis.com/wp-content/uploads/2013/11/ltl-shipping.jpg';
+	images[0]='https://simextrans.com/wp-content/uploads/2017/04/3.jpg';
+
+	images[1]='https://cdn.quizzclub.com/trivia/2017-11/but-if-memories-were-all-i-sang-i-rather-drive-a-truck-are-lyrics-from-which-song.jpg';
 	images[2]='https://www.joc.com/sites/default/files/field_feature_image/Truck%20delivery%20private%20US.jpg%202.jpg';
-	images[3]='https://s3-eu-central-1.amazonaws.com/eurosender-blog/wp-content/uploads/2017/07/26140159/freight.png';
-	images[4]='https://www.echo.com/sites/default/files/styles/letterbox_750x265/public/Trucks%20on%20the%20Road.jpg?itok=xcBn0rRx';
+	images[3]='https://www.trucks.com/wp-content/uploads/2018/09/trucking-fleet.jpg';
+	images[4]='https://media-exp1.licdn.com/dms/image/C4E22AQH_IepF0zK3rA/feedshare-shrink_800/0?e=1585785600&v=beta&t=GoRIen4dOEuQNO2g6V8UXLn-HPrJtI8API8PoMmq0b4';
 	function switcher(i){
 		document.getElementById('header').style.backgroundImage='url("'+images[i]+'")';
-		document.getElementById('header').style.transition = "all 2s";
+		document.getElementById('header').style.transition = "all 0.5s";//change transition time
 		i++;
 		if( i > (images.length - 1) ){
 
@@ -308,6 +435,7 @@ setTimeout('switcher('+i+')',2000);
 	function disappear() {
 		document.getElementById("navb").style.width = "0px";
 	}
+
 </script>
 </head>
 <body>
